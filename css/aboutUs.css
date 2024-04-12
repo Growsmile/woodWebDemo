@@ -1,0 +1,79 @@
+.btnAboutUs {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid #fefefe;
+    text-transform: uppercase;
+    color: #fefefe;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.3s;
+  }
+  
+  .btnAboutUs::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - -2px);
+    background-color: #332d2d;
+    transition: 0.3s ease-out;
+    transform: scaleY(1);
+  }
+  
+  .btnAboutUs::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 50px);
+    background-color: #332d2d;
+    transition: 0.3s ease-out;
+    transform: scaleY(1);
+  }
+  
+  .btnAboutUs:hover::before {
+    transform: translateY(-25px);
+    height: 0;
+  }
+  
+  .btnAboutUs:hover::after {
+    transform: scaleX(0);
+    transition-delay: 0.15s;
+  }
+  
+  .btnAboutUs:hover {
+    border: 2px solid #FF9800;
+  }
+  
+  .btnAboutUs span {
+    position: relative;
+    z-index: 3;
+  }
+  
+  .active{
+    color: #FF9800;
+  }
+  
+  button {
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+  }
+
+  .cardAbout{
+    transition: transform 0.4s ease;
+    height: 93%;
+  }
+
+  .cardAbout:hover  {
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+   /* #aboutPicture{
+    height: 62%;
+} */

@@ -1,0 +1,19 @@
+body{
+background-color: black;
+}
+
+
+#WebcolorPallet {
+background-color: #D9EDBF;
+background-color: #FF9800;
+background-color: #2C7865;
+background-color: #90D26D;
+}
+
+.colorOrange{
+    color: #FF9800;
+}
+
+.backgroundWhite{
+    background-color: #ffffff;
+}

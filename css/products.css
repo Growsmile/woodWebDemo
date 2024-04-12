@@ -1,0 +1,103 @@
+.productsPhoto{
+    margin-top: -114.278px;
+    transition: transform 0.4s ease;
+}
+.productsAlbum{
+    padding-top: 83px;
+}
+.productsAlbum:hover {
+    cursor: pointer;
+    transform: scale(1);
+}
+.cardAlbum{
+    height: 89%;
+}
+.cardAlbum:hover .productsPhoto {
+    transform: scale(1.03);
+}
+
+.productsAlbum:active {
+    transform: scale(0.97);
+}
+
+.cardAlbum:hover{
+    outline-offset: 1px;
+    outline: 2px solid #FF9800;
+}
+
+.btnProductBack {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid #ff9800;
+    text-transform: uppercase;
+    color: #fefefe;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.3s;
+  }
+  
+  .btnProductBack::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - -2px);
+    background-color: #ffffff;
+    transition: 0.3s ease-out;
+    transform: scaleY(1);
+  }
+  
+  .btnProductBack::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 50px);
+    background-color: #ffffff;
+    transition: 0.3s ease-out;
+    transform: scaleY(1);
+  }
+  
+  .btnProductBack:hover::before {
+    transform: translateY(-25px);
+    height: 0;
+  }
+  
+  .btnProductBack:hover::after {
+    transform: scaleX(0);
+    transition-delay: 0.15s;
+  }
+  
+  .btnProductBack:hover {
+    border: 2px solid #FF9800;
+  }
+  
+  .btnProductBack span {
+    position: relative;
+    z-index: 3;
+  }
+
+  .ProductBackButtonPadding{
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+
+  .productBoxShaddow{
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
+  }
+
+  .productPicSizeDiv{
+
+    max-width: 700px;
+  }
+
+  .productPicSize{
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border: 1px solid #ccc;
+  }
